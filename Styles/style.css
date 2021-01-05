@@ -1,15 +1,20 @@
+/* Mengubah warna latar belakang website ke warna yang ditentukan */
 body {
 background-color: #f3ecc2;
 }
+/* Mengubah gaya garis horizontal menjadi titik titik, warna menjadi abu-abu dan menentukan 
+ukuran serta jaraknya dari elemen lain dalam halaman  */
 hr {
 border-width: 5px;
 border-style: dotted none none none;
 border-color: gray;
 width: 5%;
 }
+/* Mengubah warna heading 1 ke warna yang ditentukan */
 h1 {
   color: #14b1ab;
 }
+/* Mengubah warna heading 3 ke warna yang ditentukan */
 h3 {
   color: #14b1ab;
 }
