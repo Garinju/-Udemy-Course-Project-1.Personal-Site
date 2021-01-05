@@ -1,68 +1,108 @@
 <!DOCTYPE html>
+<!-- Menentukan bahasa dan arah teks netral (bahasa inggris dan ltr=left to right(kanan ke kiri)). -->
 <html lang="en" dir="ltr">
   <head>
+    <!-- Menentukan character set ke utf-8 -->
     <meta charset="utf-8">
+    <!-- Judul Halaman -->
     <title>Curriculum Vitae</title>
+    <!-- Menenetukan css yang akan digunakan -->
     <link rel="stylesheet" href="Styles/style.css">
   </head>
   <body>
+    <!-- Tabel untuk organisasi konten -->
     <table>
+    <!-- Menambahkan baris ke tabel -->
     <tr>
+      <!-- Menambahkan data ke baris dari kiri ke kanan-->
       <td><class ="profile-picture" img src="images/profile.png" alt="Garin's Profile Picture"></td>
-      <td><h1>Garin Juniar Akbar</h1>
+      <!-- Kita bisa memasukan elemen lain ke dalam data tabel -->
+      <!-- Heading untuk memisahkan tiap section, h1 judul utama halaman -->
+        <td><h1>Garin Juniar Akbar</h1>
         <p>Responsible, adaptive, and very passionate about working in IT related field</p>
         <p></em></p></td>
     </tr>
     </table>
+    <!-- Garis horizontal -->
       <hr>
+    <!-- Heading untuk memisahkan tiap bagian -->
     <h3>Education</h3>
+        <!-- Menambahkan tabel untuk organisasi konten -->
         <table>
+          <!-- Menambahkan baris ke tabel -->
           <tr>
+            <!-- Menambahkan data ke baris dari kiri ke kanan-->
             <td>2012-2015</td>
-              <td>Sliyeg Highschool 1</td>
+            <td>Sliyeg Public Highschool 1</td>
           </tr>
           <tr>
             <td>2015-2020</td>
-              <td>Indonesia University of Education Majoring in Educational Psychology (3.64 GPA)<br/>
-              </td>
+              <td>Indonesia University of Education Majoring in Educational Psychology (3.64 GPA)</td>
           </tr>
         </table>
       <hr>
+      <!-- Heading untuk memisahkan tiap bagian -->
       <h3>Work Experience</h3>
       <table>
+        <!-- Tabel dapat dibagi dalam tiga bagian yaitu thead, tbody, tfloor -->
+        <!-- thead digunakan untuk mengelompokkan konten header dari tabel -->
         <thead>
+          <!-- th digunakan mendefinisikan cell header dalam tabel, konten dalam cell ini akan otomatis di tebalkan dan rata tengah (bold) -->
           <th>
+            <!-- Membuat baris baru di dalam heading tabel -->
             <tr>
+              <!-- Menambahkan cell atau data dalam baris tabel dari kiri ke kanan -->
               <td>Year</td>
               <td>Position</td>
             </tr>
           </th>
         </thead>
+        <!-- tbody Mengelompokkan konten utama tabel (data-data tabel)-->
         <tbody>
+          <!-- Membuat baris baru di dalam body tabel -->
           <tr>
+            <!-- Menambahkan cell atau data dalam baris tabel dari kiri ke kanan -->
             <td>August-Desember 2018</td>
             <td>Guidance Counselor at Bandung Junior Highschool 12</td>
           </tr>
         </tbody>
       </table>
-
+      <!-- Garis horizontal -->
       <hr>
+      <!-- Heading untuk memisahkan tiap bagian -->
       <h3>Skills</h3>
+      <!-- Membuat daftar tanpa urutan -->
       <ul>
+        <!-- Membuat item dalam daftar -->
         <li>Intermediate Guidance Counseling Skill</li>
         <li>Good Communication Skill</li>
         <li>Proficient in English</li>
         <li>Application of Basic HTML</li>
       </ul>
+    <!-- Garis horizontal -->
     <hr/>
+    <!-- Membuat normal paragraph dan menekankan/memiringkan beberapa bagian teks dengan <em> tag -->
     <p>Contact me at: <em>garinjuniar080697@gmail.com</em> or you can just use this form right here.</p>
+    <!-- Membuat formulir dan setelah user mengisi mengirimkan hasilnya ke email developer -->
     <form action="mailto:Garinjuniar080697@gmail.com" method="post" enctype="text/plain">
+      <!-- Membuat label/keterangan tentang data apa yang harus dimasukkan dalam input oleh user -->
       <label>Your name:</label><br>
-        <input type="Text" name="My Name" value=""><br>
+        <!-- Membuat area untuk user memasukkan data yang dibutuhkan ke dalam formulir -->
+        <!-- Tipe data yang diterima teks, nama dari data ini adalah "My Name", 
+        agar hasil formulir dapat diakses apabila nanti hasilnya akan dimasukan ke dalam database 
+        atau digunakan dalam pengoperasian tertentu di server -->
+        <input type="Text" name="My Name"><br>
+      <!-- Membuat label/keterangan tentang data apa yang harus dimasukkan dalam input oleh user -->
       <label>Your e-mail</label><br>
+      <!-- Membuat area untuk user memasukkan data yang dibutuhkan ke dalam formulir -->
+      <!-- Tipe data yang diterima adalah email, nama dari data ini adalah "My Email" -->
         <input type="email" name="My email" value=""><br>
+      <!-- Membuat label/keterangan tentang data apa yang harus dimasukkan dalam input oleh user -->
       <label>Your message</label><br>
+        <!-- Membuat area untuk user memasukkan data yang dibutuhkan ke dalam formulir 
+        berupa teks area-->
         <textarea name="My Message" rows="8" cols="80"></textarea><br>
+        <!-- Membuat tombol submit yang ketika tombol ini ditekan action dalam form akan di eksekusi -->
         <input type="submit" name="">
     </form>
   </body>
